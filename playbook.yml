@@ -1,0 +1,5 @@
+---
+- hosts: localhost
+  become: yes
+  roles:
+      - { role: i3, tags: ['i3'], when: "desktop_environment == 'i3'" }
