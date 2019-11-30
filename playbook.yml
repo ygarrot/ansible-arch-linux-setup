@@ -1,5 +1,8 @@
 ---
 - hosts: localhost
-  become: yes
-  roles:
-      - { role: i3, tags: ['i3'], when: "desktop_environment == 'i3'" }
+  #become: yes
+  tasks:
+  - import_role:
+       name: i3
+    tags:
+         - i3
