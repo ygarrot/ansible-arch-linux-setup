@@ -1,10 +1,8 @@
 ---
 - name: Install dwm
-  pacman:
+  aur:
     name:
         - dwm 
-        - dwm-user
-    state: present
 
 - name: Verify that default applications file exists
   file: path=/etc/xdg/mimeapps.list state=touch
