@@ -3,6 +3,9 @@
   #become: yes
   tasks:
   - import_role:
-       name: i3
+       name: vim
+       name: dwm
+       # name: i3
     tags:
-         - i3
+         - vim
+         - dwm
