@@ -4,8 +4,10 @@
   tasks:
   - import_role:
        name: vim
+       name: zsh
        name: dwm
        # name: i3
     tags:
          - vim
          - dwm
+         - zsh
