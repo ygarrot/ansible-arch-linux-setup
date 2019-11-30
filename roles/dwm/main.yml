@@ -1,0 +1,18 @@
+---
+- name: Install dwm
+  pacman:
+    name:
+        - dwm 
+        - dwm-user
+    state: present
+
+- name: Verify that default applications file exists
+  file: path=/etc/xdg/mimeapps.list state=touch
+
+- name: Verify header in default applications file
+  lineinfile: dest=/etc/xdg/mimeapps.list
+              state=present
+              line='[Default Applications]'
+              insertbefore=BOF
+
+ 
