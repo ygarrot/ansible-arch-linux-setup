@@ -1,0 +1,7 @@
+---
+- name: Install st
+  aur:
+    name:
+        - st
+  become: true
+  become_user: aur_builder

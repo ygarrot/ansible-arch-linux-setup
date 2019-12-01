@@ -2,12 +2,8 @@
 - hosts: localhost
   #become: yes
   tasks:
+
   - import_role:
-       name: vim
-       name: zsh
-       name: dwm
-       # name: i3
+       name: editor
     tags:
-         - vim
-         - dwm
-         - zsh
+        - editor

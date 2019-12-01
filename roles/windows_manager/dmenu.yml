@@ -1,8 +1,6 @@
 ---
-- name: Install zsh
+- name: Install dmenu
   pacman:
     name:
-        - zsh
+       - dmenu
     state: present
-
-
