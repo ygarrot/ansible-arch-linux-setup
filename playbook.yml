@@ -7,3 +7,23 @@
        name: editor
     tags:
          - editor
+
+  - import_role:
+       name: aur
+    tags:
+         - aur
+  
+  - import_role:
+       name: terminal
+    tags:
+         - terminal
+
+  - import_role:
+       name: windows_manager
+    tags:
+         - windows_manager
+
+  - import_role:
+       name: X
+    tags:
+         - X

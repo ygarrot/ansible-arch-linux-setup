@@ -1,0 +1,4 @@
+---
+- include : dmenu.yml
+- include : dwm.yml
+- include : i3.yml

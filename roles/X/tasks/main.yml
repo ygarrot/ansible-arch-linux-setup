@@ -1,0 +1,10 @@
+---
+- name: install Xorg
+  pacman:
+    name:
+         - xorg-server
+         - xorg-xinit
+         - xorg-twm
+         - xorg-xclock
+         - xterm
+    state: present
