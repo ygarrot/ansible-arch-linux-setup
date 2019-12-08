@@ -7,4 +7,18 @@
          - xorg-twm
          - xorg-xclock
          - xterm
+         - xorg-xmodmap
+         - xorg-xsetroot
+         - xorg-xset
+         - xcompmgr
+         - xwallpaper
+
+         - libnotify
+         - dunst #FIXME
+         - sxhkd #FIXME
+         - unclutter
+         - mpd
+         - mpc
+           #- mpv
+
     state: present
