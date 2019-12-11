@@ -1,6 +1,9 @@
 ---
-- name: Install dmenu
-  pacman:
-    name:
-       - dmenu
-    state: present
+#- name: Install dmenu
+#  pacman:
+#    name:
+#       - dmenu
+#    state: present
+
+- name: Install dwmblocks
+  shell: "git clone https://github.com/lukesmithxyz/dmenu.git; cd dmenu; make; make install;"

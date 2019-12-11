@@ -1,19 +1,28 @@
 ---
+# It's ugly but its temporary :D
 - name: Install dwm
-  aur:
-    name:
-        - dwm 
-          #use: yay
-  become: true
-  become_user: aur_builder
+  shell: "git clone https://github.com/lukesmithxyz/dwm.git; cd dwm; make; make install;"
 
-- name: Verify that default applications file exists
-  file: path=/etc/xdg/mimeapps.list state=touch
+- name: Install dwmblocks
+  shell: "git clone https://github.com/lukesmithxyz/dwmblocks.git; cd dwmblocks; make; make install;"
 
-- name: Verify header in default applications file
-  lineinfile: dest=/etc/xdg/mimeapps.list
-              state=present
-              line='[Default Applications]'
-              insertbefore=BOF
 
+
+#- name: Install dwm
+#  aur:
+#    name:
+#        - dwm 
+#          #use: yay
+#  become: true
+#  become_user: aur_builder
+
+  #- name: Verify that default applications file exists
+  #  file: path=/etc/xdg/mimeapps.list state=touch
+  #
+  #- name: Verify header in default applications file
+  #  lineinfile: dest=/etc/xdg/mimeapps.list
+  #              state=present
+  #              line='[Default Applications]'
+  #              insertbefore=BOF
+  #
  

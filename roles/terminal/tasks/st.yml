@@ -1,7 +1,11 @@
 ---
+#- name: Install st
+#  aur:
+#    name:
+#        - st
+#  become: true
+#  become_user: aur_builder
+
+
 - name: Install st
-  aur:
-    name:
-        - st
-  become: true
-  become_user: aur_builder
+  shell: "git clone https://github.com/lukesmithxyz/st.git; cd st; make; make install;"
