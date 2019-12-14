@@ -1,3 +1,10 @@
 ---
+- name: Install tmux
+  pacman:
+    name:
+        - tmux
+    state: present
+
+
 - include: st.yml
 - include: zsh.yml
