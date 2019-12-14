@@ -2,11 +2,18 @@
 - name: install Xorg
   pacman:
     name:
-         - xorg-server
-         - xorg-xinit
-         - xorg-twm
-         - xorg-xclock
-         - xterm
+         - xorg-server #graphical server
+         - xorg-xinit  #start the graphical server
+         - xorg-xprop  #detect window properties
+
+         - xorg-minimal  #graphical server V
+         - xorg-fonts  #font package V
+
+         - xorg-xdpyinfo  #aids with resolution determination and screen recording
+         - xorg-xbacklight  #enable changing screen brightness level
+         # - xorg-twm
+         # - xorg-xclock
+         # - xterm
          - xorg-xmodmap
          - xorg-xsetroot
          - xorg-xset
@@ -14,11 +21,17 @@
          - xwallpaper
 
          - libnotify
-         - dunst #FIXME
-         - sxhkd #FIXME
-         - unclutter
-         - mpd
-         - mpc
-           #- mpv
+         - dunst #suckless notification system
+         - sxhkd #bind keys
+         # - unclutter #hide an inactive mouse
+         # - unclutter #hide an inactive mouse
+
+         - xclip #allows for copying and pasting from command line
+         - xcape # gives the special escape/super mappings of LARBS
+         - xdotools # provides window action utilities on the command line
+         ### music player
+         # - mpd
+         # - mpc
+         # - mpv
 
     state: present
