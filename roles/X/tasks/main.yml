@@ -1,56 +1,34 @@
 ---
 - name: install Xorg
   pacman:
-    name:
-         - xorg-server #graphical server
-         - xorg-xinit  #start the graphical server
-         - xorg-xprop  #detect window properties
+      name:
+          - xorg-server #graphical server
+          - xorg-xinit  #start the graphical server
+          - xorg-xprop  #detect window properties
+          - xorg-xdpyinfo  #aids with resolution determination and screen recording
+          - xorg-xbacklight  #enable changing screen brightness level
 
-         # - xorg-minimal  #graphical server V
-         - xorg-fonts  #font package V
+          ### Void ??????
+          # - xorg-xmodmap
+          # - xorg-xsetroot
+          # - xorg-xset
 
-         - xorg-xdpyinfo  #aids with resolution determination and screen recording
-         - xorg-xbacklight  #enable changing screen brightness level
-         # - xorg-twm
-         # - xorg-xclock
-         # - xterm
-         - xorg-xmodmap
-         - xorg-xsetroot
-         - xorg-xset
-         - xcompmgr
-         - xwallpaper
+          - xcompmgr
+          - xwallpaper
 
-         - libnotify
-         - dunst #suckless notification system
-         - sxhkd #bind keys
-         # - unclutter #hide an inactive mouse
-         # - unclutter #hide an inactive mouse
+          - libnotify
+          - dunst #suckless notification system
+          - sxhkd #bind keys
+          - unclutter #hide an inactive mouse
 
-         - xclip #allows for copying and pasting from command line
-         - xcape # gives the special escape/super mappings of LARBS
-         - xdotool # provides window action utilities on the command line
-         ### music player
-         # - mpd
-         # - mpc
-         # - mpv
+          - xclip #allows for copying and pasting from command line
+          - xcape # gives the special escape/super mappings of LARBS
+          - xdotool # provides window action utilities on the command line
 
-           ## Font
-         - fontconfig-devel
-         - ttf-joypixels
-         # - ttf-symbola
-         - ttf-inconsolata
-         - ttf-linux-libertine
-         # - font-symbola #V
-
-    state: present
-
-
-
-- name: Install font-symbola
-  aur:
-    name:
-        - ttf-symbola
-  become: true
-  become_user: aur_builder
+            ### music player
+            # - mpd
+            # - mpc
+            # - mpv
+      state: present
 
 

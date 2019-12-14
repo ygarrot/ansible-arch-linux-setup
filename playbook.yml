@@ -27,3 +27,13 @@
        name: X
     tags:
          - X
+
+  - import_role:
+       name: font
+    tags:
+         - font
+
+  - import_role:
+       name: web_browser
+    tags:
+         - web_browser
