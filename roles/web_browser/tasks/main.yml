@@ -3,4 +3,5 @@
   pacman:
       name:
           - firefox
+          - youtube-dl
       state: present
