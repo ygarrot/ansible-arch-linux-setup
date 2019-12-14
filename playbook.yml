@@ -37,3 +37,8 @@
        name: web_browser
     tags:
          - web_browser
+
+  - import_role:
+       name: file_extension_manager
+    tags:
+         - file_extension_manager

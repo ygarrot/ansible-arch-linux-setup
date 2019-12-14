@@ -1,9 +1,10 @@
 ---
 - name: Install zsh
   pacman:
-    name:
-        - zsh
-    state: present
+      name:
+          - zsh
+          - zsh-syntax-highlighting #provide fish-like syntax highlighting in the shell
+      state: present
 
-    #       - name: Install oh my zsh
-    #         shell: sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# - name: Install oh my zsh
+#   shell: sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

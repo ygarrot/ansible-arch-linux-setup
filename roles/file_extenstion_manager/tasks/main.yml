@@ -1,0 +1,12 @@
+---
+- name: install file managers
+  pacman:
+      name:
+          - unrar # is it really useful ??
+          - unzip 
+          - atool #manages and gives information about archives.
+            ##for pdf
+          - zathura # is a pdf viewer with vim-like bindings.
+          - zathura-pdf-mupdf # allows mupdf pdf compatibility in zathura.
+
+      state: present

@@ -25,6 +25,10 @@
           - xcape # gives the special escape/super mappings of LARBS
           - xdotool # provides window action utilities on the command line
 
+          - slock
+            ##not sure about this one
+          - arandr #is a UI for screen adjustment.
+
             ### music player
             # - mpd
             # - mpc
