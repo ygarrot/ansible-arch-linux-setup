@@ -37,9 +37,20 @@
            ## Font
          - fontconfig-devel
          - ttf-joypixels
-         - ttf-symbola
+         # - ttf-symbola
          - ttf-inconsolata
          - ttf-linux-libertine
-         - font-symbola
+         # - font-symbola #V
 
     state: present
+
+
+
+- name: Install font-symbola
+  aur:
+    name:
+        - ttf-symbola
+  become: true
+  become_user: aur_builder
+
+
