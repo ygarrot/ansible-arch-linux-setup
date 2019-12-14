@@ -6,7 +6,7 @@
          - xorg-xinit  #start the graphical server
          - xorg-xprop  #detect window properties
 
-         - xorg-minimal  #graphical server V
+         # - xorg-minimal  #graphical server V
          - xorg-fonts  #font package V
 
          - xorg-xdpyinfo  #aids with resolution determination and screen recording
@@ -28,10 +28,18 @@
 
          - xclip #allows for copying and pasting from command line
          - xcape # gives the special escape/super mappings of LARBS
-         - xdotools # provides window action utilities on the command line
+         - xdotool # provides window action utilities on the command line
          ### music player
          # - mpd
          # - mpc
          # - mpv
+
+           ## Font
+         - fontconfig-devel
+         - ttf-joypixels
+         - ttf-symbola
+         - ttf-inconsolata
+         - ttf-linux-libertine
+         - font-symbola
 
     state: present
