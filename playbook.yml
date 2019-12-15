@@ -4,24 +4,14 @@
   tasks:
 
   - import_role:
-       name: editor
-    tags:
-         - editor
-
-  - import_role:
        name: aur
     tags:
          - aur
-  
-  - import_role:
-       name: terminal
-    tags:
-         - terminal
 
   - import_role:
-       name: windows_manager
+       name: editor
     tags:
-         - windows_manager
+         - editor
 
   - import_role:
        name: X
@@ -32,6 +22,16 @@
        name: font
     tags:
          - font
+  
+  - import_role:
+       name: terminal
+    tags:
+         - terminal
+
+  - import_role:
+       name: windows_manager
+    tags:
+         - windows_manager
 
   - import_role:
        name: web_browser
