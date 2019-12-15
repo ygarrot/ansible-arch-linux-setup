@@ -5,13 +5,13 @@
         - tmux
         - fzf #is a fuzzy finder tool.
         - the_silver_searcher # grep but better
+        - ctags
     state: present
 
 - name: Install ranger and ctags
   aur:
     name:
         - ranger-git
-        - ctags
   become: true
   become_user: aur_builder
 
